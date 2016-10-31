@@ -61,7 +61,6 @@ def get_form_pages(page_map):
         if isinstance(page, QuestionPage):
             FormType = type('Page%iForm' % idx, (QuestionPageForm,),
                             {"items": sorted(item_set, key=lambda i: i.position),
-                             "encouragement": page.encouragement,
                              "infobox": page.infobox,
                              "page_section": page.section,
                              "section_map": section_map,
