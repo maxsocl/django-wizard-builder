@@ -49,7 +49,6 @@ class TextPage(PageBase):
 
 
 class QuestionPage(PageBase):
-    encouragement = models.TextField(blank=True)
     infobox = models.TextField(blank=True,
                                verbose_name='why is this asked? wrap additional titles in [[double brackets]]')
     multiple = models.BooleanField(blank=False, default=False,
