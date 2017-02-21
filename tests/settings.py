@@ -7,7 +7,10 @@ USE_TZ = True
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
-    }
+    },
+    "alternate": {
+        "ENGINE": "django.db.backends.sqlite3",
+    },
 }
 
 ROOT_URLCONF = "tests.urls"
