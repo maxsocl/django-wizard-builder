@@ -3,9 +3,9 @@ import copy
 from polymorphic.models import PolymorphicModel
 
 from django import forms
-from django.db.utils import OperationalError
 from django.core.exceptions import ObjectDoesNotExist
 from django.db import models
+from django.db.utils import OperationalError
 from django.utils.safestring import mark_safe
 
 
