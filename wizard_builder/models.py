@@ -31,6 +31,7 @@ class PageBase(PolymorphicModel):
 
     section = models.IntegerField(choices=SECTION_CHOICES,
                                   default=WHEN)
+    faketitle = models.TextField(blank=True)
 
     class Meta:
         ordering = ['position']

@@ -2,6 +2,7 @@
 def make_migrations():
     from django.core.management import call_command
     call_command('makemigrations', 'test_app')
+    call_command('makemigrations', 'wizard_builder')
 
 
 if __name__ == '__main__':
